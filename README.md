@@ -8,4 +8,4 @@ To make this website, I used HTML, CSS, and JavaScript. I coded it on VS Code an
 
 While coding, I had to re-learn the basics of web development, as I hadn’t built a website in a few years. I watched many tutorials and had to re-learn all the basics. However, I was able to learn many new concepts, including classes and IDs in CSS to change up the style of my images/text.
 
-View my project here:
+View my project here: https://kaileyliou.github.io/Personal-Website/
