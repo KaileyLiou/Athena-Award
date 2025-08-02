@@ -176,6 +176,8 @@ img {
 @media screen and (max-width: 850px) {
   .flex-container {
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
