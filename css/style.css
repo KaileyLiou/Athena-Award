@@ -120,3 +120,11 @@ img {
     border: 0px;
     padding: none;
 }
+
+.footer {
+    background-color: #c5e2df;
+    padding: 10px; 
+    margin: 0;
+    border: 0;
+    height: auto; 
+}
