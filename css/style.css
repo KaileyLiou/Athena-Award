@@ -128,3 +128,10 @@ img {
     border: 0;
     height: auto; 
 }
+
+.footer-text {
+    color: #3d716c;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
