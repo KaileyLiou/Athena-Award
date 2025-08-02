@@ -109,5 +109,6 @@ img {
 
 .navbar-email {
     float:right;
-    margin-right: 1%;
+    margin: 0;
+    border: none;
 }
