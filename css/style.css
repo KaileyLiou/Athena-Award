@@ -109,7 +109,9 @@ img {
 
 .navbar-github {
     float:right;
+    width: 30px;
     margin: 0;
+    margin-right: 2%;
     border: 0px;
     padding: none;
 }
