@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -154,6 +155,7 @@ img {
     margin: 1%;
     flex: 1 1 250px;
     max-width: 300px;
+    height: auto;
     text-align: center;
 }
 
