@@ -147,16 +147,24 @@ img {
     flex-direction: row;
     flex-wrap: wrap;     
     justify-content: center;
-    gap: 1.5em;     
+    gap: 1.5em;  
+    padding: 1em;   
 }
 
 .flex-item {
     flex-basis: 100%;
-    margin: 5%;
+    margin: 0.75em;
     flex: 1 1 250px;
     max-width: 300px;
     height: auto;
     text-align: center;
+}
+
+.flex-item img {
+    width: 100%;     
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5%;
 }
 
 @media screen and (max-width: 850px) {
