@@ -178,3 +178,17 @@ img {
     flex-wrap: wrap;
   }
 }
+
+.portfolio-img {
+  border-radius: 5%;
+  border: 3px solid white;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
