@@ -194,3 +194,26 @@ img {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.grid-title {
+  color: #3d716c;
+  margin-top: 2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin: 2em 10%;
+  background-color: #3d716c;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.grid-item {
+  background-color: #c5e2df;
+  color: #3d716c;
+  padding: 1em;
+  border-radius: 10px;
+  font-weight: bold;
+}
