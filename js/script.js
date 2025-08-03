@@ -91,3 +91,13 @@ function higeImage2() {
     img.style.display = "none";
   }
 }
+
+function changeText() {
+  const text = document.getElementById("hover-text");
+  text.textContent = "This website!";
+}
+
+function resetText() {
+  const text = document.getElementById("hover-text");
+  text.textContent = "Personal Website";
+}
