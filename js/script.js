@@ -84,12 +84,11 @@ function resetText() {
   text.textContent = "Personal Website";
 }
 
-const codingTitle = document.getElementById('coding-title');
-
-codingTitle.addEventListener('mouseover', () => {
-  codingTitle.style.fontSize = '2.5rem';
-});
-
-codingTitle.addEventListener('mouseout', () => {
-  codingTitle.style.fontSize = '2rem';
-});
+function changeTextSize() {
+  const subtext = document.getElementById("portoflio-subtext");
+  if (subtext.style.fontSize === "20px") {
+    subtext.style.fontSize = "16px";
+  } else {
+    subtext.style.fontSize = "20px";
+  }
+}
