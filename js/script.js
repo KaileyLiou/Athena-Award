@@ -14,15 +14,19 @@ function toggleCaption() {
   }
 }
 
-const toggleButton = document.getElementById("theme-toggle");
-const themeIcon = document.getElementById("theme-icon");
+const toggleButton = document.querySelectorAll('.theme-toggle');
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+toggleButton.forEach(button => {
+  button.addEventListener('click', () => {
+    const icon = button.querySelector('.theme-icon');
+    const body = document.body;
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      icon.src = 'assets/moon.svg';
     } else {
-        themeIcon.src = "assets/sun.svg";
+      icon.src = 'assets/sun.svg';
     }
+  });
 });
