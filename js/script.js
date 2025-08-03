@@ -14,6 +14,21 @@ function toggleCaption() {
   }
 }
 
+function animateCount(id, end) {
+  let count = 0;
+  const elem = document.getElementById(id);
+  const interval = setInterval(() => {
+    if (count >= end) {
+        clearInterval(interval);
+    }
+    else {
+      count++;
+      elem.textContent = count;
+    }
+  }, 50);
+}
+animateCount('coding-hours', 20);
+
 const toggleButton = document.getElementById("theme-toggle1");
 const themeIcon = document.getElementById("theme-icon1");
 
