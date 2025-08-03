@@ -65,6 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function changeColor() {
-  const title = document.getElementById("projects-title");
-  title.style.color = "hotpink";
+    const title = document.getElementById("projects-title");
+    title.style.color = "hotpink";
+}
+
+function changeTextColor() {
+    const text = document.getElementById("portfolio-text");
+    text.style.color = "blue";
 }
