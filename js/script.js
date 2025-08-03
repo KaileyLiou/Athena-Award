@@ -15,17 +15,33 @@ function toggleCaption() {
 }
 
 function animateCount(id, end) {
-  let count = 0;
+  let num = 0;
   const elem = document.getElementById(id);
-  const interval = setInterval(() => {
-    if (count >= end) {
-      clearInterval(interval);
+  const timer = setInterval(() => {
+    if (num >= end) {
+      clearInterval(timer);
     } else {
-      count++;
-      elem.textContent = count;
+      num++;
+      elem.textContent = num;
     }
   }, 50);
 }
+
+const observer = new IntersectionObserver((items, observer) => {
+  items.forEach(item => {
+    if (item.isIntersecting) {
+      animateCount("coding-hours", 20); 
+      observer.unobserve(item.target); 
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const target_hour = document.getElementById("coding-time");
+  if (target_hour) {
+    observer.observe(target_hour);
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   animateCount("coding-hours", 20);
@@ -44,28 +60,28 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-// const toggleButton2 = document.getElementById("theme-toggle2");
-// const themeIcon2 = document.getElementById("theme-icon2");
+const toggleButton2 = document.getElementById("theme-toggle2");
+const themeIcon2 = document.getElementById("theme-icon2");
 
-// toggleButton.addEventListener("click", () => {
-//     document.body.classList.toggle("dark-mode");
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-//     if (document.body.classList.contains("dark-mode")) {
-//         themeIcon.src = "assets/moon.svg";
-//     } else {
-//         themeIcon.src = "assets/sun.svg";
-//     }
-// });
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.src = "assets/moon.svg";
+    } else {
+        themeIcon.src = "assets/sun.svg";
+    }
+});
 
-// const toggleButton3 = document.getElementById("theme-toggle3");
-// const themeIcon3 = document.getElementById("theme-icon3");
+const toggleButton3 = document.getElementById("theme-toggle3");
+const themeIcon3 = document.getElementById("theme-icon3");
 
-// toggleButton.addEventListener("click", () => {
-//     document.body.classList.toggle("dark-mode");
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-//     if (document.body.classList.contains("dark-mode")) {
-//         themeIcon.src = "assets/moon.svg";
-//     } else {
-//         themeIcon.src = "assets/sun.svg";
-//     }
-// });
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.src = "assets/moon.svg";
+    } else {
+        themeIcon.src = "assets/sun.svg";
+    }
+});
