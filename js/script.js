@@ -14,19 +14,41 @@ function toggleCaption() {
   }
 }
 
-const toggleButton = document.querySelectorAll('.theme-toggle');
+const toggleButton = document.getElementById("theme-toggle1");
+const themeIcon = document.getElementById("theme-icon1");
 
-toggleButton.forEach(button => {
-  button.addEventListener('click', () => {
-    const icon = button.querySelector('.theme-icon');
-    const body = document.body;
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-    body.classList.toggle('dark-mode');
-
-    if (body.classList.contains('dark-mode')) {
-      icon.src = 'assets/moon.svg';
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.src = "assets/moon.svg";
     } else {
-      icon.src = 'assets/sun.svg';
+        themeIcon.src = "assets/sun.svg";
     }
-  });
+});
+
+const toggleButton2 = document.getElementById("theme-toggle2");
+const themeIcon2 = document.getElementById("theme-icon2");
+
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.src = "assets/moon.svg";
+    } else {
+        themeIcon.src = "assets/sun.svg";
+    }
+});
+
+const toggleButton3 = document.getElementById("theme-toggle3");
+const themeIcon3 = document.getElementById("theme-icon3");
+
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.src = "assets/moon.svg";
+    } else {
+        themeIcon.src = "assets/sun.svg";
+    }
 });
