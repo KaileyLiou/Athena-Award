@@ -4,3 +4,12 @@ var Typed = new Typed(".typed-text", {
     backSpeed: 100,
     loop: true
 });
+
+function toggleCaption() {
+  const caption = document.getElementById("meals-caption");
+  if (caption.style.display === "none") {
+    caption.style.display = "block";
+  } else {
+    caption.style.display = "none";
+  }
+}
