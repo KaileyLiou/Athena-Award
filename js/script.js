@@ -63,3 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img = document.getElementById("spin-image");
+
+  if (img) {
+    img.addEventListener("click", () => {
+      img.style.display = img.style.display === "none" ? "block" : "none";
+    });
+  }
+});
