@@ -27,28 +27,28 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-const toggleButton2 = document.getElementById("theme-toggle2");
-const themeIcon2 = document.getElementById("theme-icon2");
+// const toggleButton2 = document.getElementById("theme-toggle2");
+// const themeIcon2 = document.getElementById("theme-icon2");
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+// toggleButton.addEventListener("click", () => {
+//     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
-    } else {
-        themeIcon.src = "assets/sun.svg";
-    }
-});
+//     if (document.body.classList.contains("dark-mode")) {
+//         themeIcon.src = "assets/moon.svg";
+//     } else {
+//         themeIcon.src = "assets/sun.svg";
+//     }
+// });
 
-const toggleButton3 = document.getElementById("theme-toggle3");
-const themeIcon3 = document.getElementById("theme-icon3");
+// const toggleButton3 = document.getElementById("theme-toggle3");
+// const themeIcon3 = document.getElementById("theme-icon3");
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+// toggleButton.addEventListener("click", () => {
+//     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
-    } else {
-        themeIcon.src = "assets/sun.svg";
-    }
-});
+//     if (document.body.classList.contains("dark-mode")) {
+//         themeIcon.src = "assets/moon.svg";
+//     } else {
+//         themeIcon.src = "assets/sun.svg";
+//     }
+// });
