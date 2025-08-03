@@ -24,7 +24,7 @@ function animateCount(id, end) {
       num++;
       elem.textContent = num;
     }
-  }, 30);
+  }, 100);
 }
 
 const observer = new IntersectionObserver((items, observer) => {
