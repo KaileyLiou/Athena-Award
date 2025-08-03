@@ -86,6 +86,10 @@ function resetText() {
 
 const codingTitle = document.getElementById('coding-title');
 
-codingTitle.addEventListener('click', () => {
-  codingTitle.style.textTransform = codingTitle.style.textTransform === 'uppercase' ? 'none' : 'uppercase';
+codingTitle.addEventListener('mouseover', () => {
+  codingTitle.style.fontSize = '2.5rem';
+});
+
+codingTitle.addEventListener('mouseout', () => {
+  codingTitle.style.fontSize = '2rem';
 });
