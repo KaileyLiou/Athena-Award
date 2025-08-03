@@ -47,41 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
   animateCount("coding-hours", 20);
 });
 
-const toggleButton = document.getElementById("theme-toggle1");
-const themeIcon = document.getElementById("theme-icon1");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+  if (toggleButton && themeIcon) {
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
+      if (document.body.classList.contains("dark-mode")) {
         themeIcon.src = "assets/moon.svg";
-    } else {
+      } else {
         themeIcon.src = "assets/sun.svg";
-    }
-});
-
-const toggleButton2 = document.getElementById("theme-toggle2");
-const themeIcon2 = document.getElementById("theme-icon2");
-
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
-    } else {
-        themeIcon.src = "assets/sun.svg";
-    }
-});
-
-const toggleButton3 = document.getElementById("theme-toggle3");
-const themeIcon3 = document.getElementById("theme-icon3");
-
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
-    } else {
-        themeIcon.src = "assets/sun.svg";
-    }
+      }
+    });
+  }
 });
