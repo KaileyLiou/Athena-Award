@@ -23,12 +23,18 @@ body.dark-mode {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0;
 }
 
-#theme-icon {
-    width: 30px;
-    height: 30px;
-    transition: filter 0.3s ease;
+#theme-toggle img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+#theme-toggle img:hover {
+  transform: scale(1.1);
 }
 
 main {
