@@ -27,30 +27,27 @@ function animateCount(id, end) {
   }, 100);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // typing effect
-  var typed = new Typed(".typed-text", {
-    strings: ["a high schooler.", "a coder.", "an athlete.", "a graphic designer."],
-    typeSpeed: 100,
-    backSpeed: 100,
-    loop: true
+const observer = new IntersectionObserver((items, observer) => {
+  items.forEach(item => {
+    if (item.isIntersecting) {
+      animateCount("coding-hours", 20); 
+      observer.unobserve(item.target); 
+    }
   });
+});
 
-  // coding time animation
-  const observer = new IntersectionObserver((items, observer) => {
-    items.forEach(item => {
-      if (item.isIntersecting) {
-        animateCount("coding-hours", 20);
-        observer.unobserve(item.target);
-      }
-    });
-  });
+document.addEventListener("DOMContentLoaded", () => {
   const target_hour = document.getElementById("coding-time");
   if (target_hour) {
     observer.observe(target_hour);
   }
+});
 
-  // Theme toggle button logic
+document.addEventListener("DOMContentLoaded", () => {
+  animateCount("coding-hours", 20);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("theme-toggle");
   const themeIcon = document.getElementById("theme-icon");
 
