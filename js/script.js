@@ -92,3 +92,8 @@ function changeTextSize() {
     subtext.style.fontSize = "20px";
   }
 }
+
+function addUnderline() {
+  const subtext = document.getElementById("portfolio-subtext2");
+  subtext.style.textDecoration = "underline";
+}
