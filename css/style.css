@@ -238,3 +238,9 @@ img {
   border-radius: 10px;
   font-weight: bold;
 }
+
+#coding-time {
+    color: #3d716c;
+    font-size: 20px;
+    margin-top: 2em;
+}
