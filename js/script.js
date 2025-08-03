@@ -74,24 +74,6 @@ function changeTextColor() {
     text.style.color = "blue";
 }
 
-function higeImage() {
-  const img = document.getElementById("hideable-img");
-  if (img.style.display === "none") {
-    img.style.display = "block";
-  } else {
-    img.style.display = "none";
-  }
-}
-
-function higeImage2() {
-  const img = document.getElementById("hideable-img2");
-  if (img.style.display === "none") {
-    img.style.display = "block";
-  } else {
-    img.style.display = "none";
-  }
-}
-
 function changeText() {
   const text = document.getElementById("hover-text");
   text.textContent = "This website!";
@@ -101,3 +83,9 @@ function resetText() {
   const text = document.getElementById("hover-text");
   text.textContent = "Personal Website";
 }
+
+const codingTitle = document.getElementById('coding-title');
+
+codingTitle.addEventListener('click', () => {
+  codingTitle.style.textTransform = codingTitle.style.textTransform === 'uppercase' ? 'none' : 'uppercase';
+});
